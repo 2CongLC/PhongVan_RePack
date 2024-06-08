@@ -1,0 +1,33 @@
+C:\Users\2CongLC.Vn\Downloads\Compressed\source\bin\Debug\zlib.net.dll
+C:\Users\2CongLC.Vn\Downloads\Compressed\source\bin\Debug\zlib.net.pdb
+C:\Users\2CongLC.Vn\Downloads\Compressed\source\obj\Debug\zlib.net.csprojAssemblyReference.cache
+C:\Users\2CongLC.Vn\Downloads\Compressed\source\obj\Debug\zlib.net.dll
+C:\Users\2CongLC.Vn\Downloads\Compressed\source\obj\Debug\zlib.net.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\SRC\SWFZip\Zlib\bin\Debug\zlib.net.dll
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\SRC\SWFZip\Zlib\bin\Debug\zlib.net.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\SRC\SWFZip\Zlib\obj\Debug\Zlib.net.csprojAssemblyReference.cache
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\SRC\SWFZip\Zlib\obj\Debug\zlib.net.dll
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\SRC\SWFZip\Zlib\obj\Debug\zlib.net.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\lib\Zlib\bin\Debug\zlib.net.dll
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\lib\Zlib\bin\Debug\zlib.net.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\lib\Zlib\obj\Debug\Zlib.net.csproj.CoreCompileInputs.cache
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\lib\Zlib\obj\Debug\zlib.net.dll
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\lib\Zlib\obj\Debug\zlib.net.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool Phong Van\lib\Zlib\bin\Debug\zlib.net.dll
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool Phong Van\lib\Zlib\bin\Debug\zlib.net.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool Phong Van\lib\Zlib\obj\Debug\Zlib.net.csprojAssemblyReference.cache
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool Phong Van\lib\Zlib\obj\Debug\Zlib.net.csproj.CoreCompileInputs.cache
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool Phong Van\lib\Zlib\obj\Debug\zlib.net.dll
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool Phong Van\lib\Zlib\obj\Debug\zlib.net.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\WindowsApp3\lib\Zlib\obj\Debug\Zlib.net.csprojAssemblyReference.cache
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\WindowsApp3\lib\Zlib\obj\Debug\Zlib.net.csproj.CoreCompileInputs.cache
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\WindowsApp3\lib\Zlib\obj\Debug\zlib.net.dll
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\WindowsApp3\lib\Zlib\obj\Debug\zlib.net.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\WindowsApp3\lib\Zlib\bin\Debug\zlib.net.dll
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\WindowsApp3\lib\Zlib\bin\Debug\zlib.net.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\lib\Zlib\bin\Debug\zlib.net.dll
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\lib\Zlib\bin\Debug\zlib.net.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\lib\Zlib\obj\Debug\Zlib.net.csprojAssemblyReference.cache
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\lib\Zlib\obj\Debug\Zlib.net.csproj.CoreCompileInputs.cache
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\lib\Zlib\obj\Debug\zlib.net.dll
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\lib\Zlib\obj\Debug\zlib.net.pdb

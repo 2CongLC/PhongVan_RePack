@@ -1,0 +1,16 @@
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\SRC\Lzma\7zip\bin\Debug\7zip.dll
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\SRC\Lzma\7zip\bin\Debug\7zip.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\SRC\Lzma\7zip\obj\Debug\7zip.csprojAssemblyReference.cache
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\SRC\Lzma\7zip\obj\Debug\7zip.dll
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\SRC\Lzma\7zip\obj\Debug\7zip.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\lib\7zip\bin\Debug\7zip.dll
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\lib\7zip\bin\Debug\7zip.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\lib\7zip\obj\Debug\7zip.csproj.CoreCompileInputs.cache
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\lib\7zip\obj\Debug\7zip.dll
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\lib\7zip\obj\Debug\7zip.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\lib\7zip\bin\Debug\7zip.dll
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\lib\7zip\bin\Debug\7zip.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\lib\7zip\obj\Debug\7zip.csprojAssemblyReference.cache
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\lib\7zip\obj\Debug\7zip.csproj.CoreCompileInputs.cache
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\lib\7zip\obj\Debug\7zip.dll
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\lib\7zip\obj\Debug\7zip.pdb

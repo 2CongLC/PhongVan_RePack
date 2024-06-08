@@ -1,0 +1,617 @@
+﻿package Untitled_2_fla
+{
+    import fl.controls.*;
+    import flash.display.*;
+    import flash.events.*;
+    import flash.filesystem.*;
+    import flash.net.*;
+    import flash.text.*;
+    import flash.utils.*;
+
+    dynamic public class MainTimeline extends MovieClip
+    {
+        public var rb1:RadioButton;
+        public var rb2:RadioButton;
+        public var rb3:RadioButton;
+        public var rb4:RadioButton;
+        public var status_txt:TextField;
+        public var submit_btn:Button;
+        public var submit_btn_pack:Button;
+        public var fileRef:FileReference;
+        public var folderRef:File;
+        public var radioGroup1:RadioButtonGroup;
+        public var folderPath:String;
+
+        public function MainTimeline()
+        {
+            addFrameScript(0, this.frame1);
+            this.__setProp_submit_btn_Scene1_stageelements_0();
+            this.__setProp_submit_btn_pack_Scene1_stageelements_0();
+            this.__setProp_rb1_Scene1_stageelements_0();
+            this.__setProp_rb2_Scene1_stageelements_0();
+            this.__setProp_rb3_Scene1_stageelements_0();
+            this.__setProp_rb4_Scene1_stageelements_0();
+            return;
+        }// end function
+
+        public function submitClick(event:MouseEvent) : void
+        {
+            if (this.radioGroup1.selection == null)
+            {
+                return;
+            }
+            this.status_txt.text = " Hãy chọn file";
+            this.fileRef = new FileReference();
+            this.fileRef.addEventListener(Event.SELECT, this.loadDecry);
+            this.fileRef.browse([new FileFilter("RES Files", "*.*")]);
+            return;
+        }// end function
+
+        public function submitPackClick(event:MouseEvent) : void
+        {
+            if (this.radioGroup1.selection == null)
+            {
+                return;
+            }
+            if (!this.rb1.selected)
+            {
+                this.status_txt.text = " Hãy chọn file";
+                this.fileRef = new FileReference();
+                this.fileRef.addEventListener(Event.SELECT, this.loadEncry);
+                this.fileRef.browse([new FileFilter("RES Files", "*.*")]);
+            }
+            else
+            {
+                this.openFolderEncryDialog();
+            }
+            return;
+        }// end function
+
+        public function loadEncry(event:Event) : void
+        {
+            this.fileRef.addEventListener(Event.COMPLETE, this.processEncryRES);
+            this.fileRef.load();
+            return;
+        }// end function
+
+        public function loadDecry(event:Event) : void
+        {
+            this.fileRef.addEventListener(Event.COMPLETE, this.processDecryRES);
+            this.fileRef.load();
+            return;
+        }// end function
+
+        public function openFolderDecryDialog() : void
+        {
+            if (this.folderRef == null)
+            {
+                this.folderRef = new File();
+            }
+            this.folderRef.addEventListener(Event.SELECT, this.openFolderDecry);
+            this.folderRef.browseForDirectory("Select folder to save..");
+            return;
+        }// end function
+
+        public function openFolderDecry(event:Event) : void
+        {
+            this.folderPath = this.folderRef.nativePath;
+            this.decryptUixml(this.fileRef.data);
+            return;
+        }// end function
+
+        public function openFolderEncryDialog() : void
+        {
+            if (this.folderRef == null)
+            {
+                this.folderRef = new File();
+            }
+            this.folderRef.addEventListener(Event.SELECT, this.openFolderEncry);
+            this.folderRef.browseForDirectory("Select folder..");
+            return;
+        }// end function
+
+        public function openFolderEncry(event:Event) : void
+        {
+            this.folderPath = this.folderRef.nativePath;
+            this.encryptUiXml();
+            return;
+        }// end function
+
+        public function processEncryRES(event:Event) : void
+        {
+            if (this.rb1.selected)
+            {
+                this.openFolderEncryDialog();
+            }
+            else if (this.rb2.selected)
+            {
+                this.encryptFystring(this.fileRef.data);
+            }
+            else if (this.rb3.selected)
+            {
+                this.ecryptLoaderXml(this.fileRef.data);
+            }
+            else if (this.rb4.selected)
+            {
+                this.ecryptUiparams(this.fileRef.data);
+            }
+            return;
+        }// end function
+
+        public function processDecryRES(event:Event) : void
+        {
+            if (this.rb1.selected)
+            {
+                this.openFolderDecryDialog();
+            }
+            else if (this.rb2.selected)
+            {
+                this.decryptFystring(this.fileRef.data);
+            }
+            else if (this.rb3.selected)
+            {
+                this.decryptLoaderXml(this.fileRef.data);
+            }
+            else if (this.rb4.selected)
+            {
+                this.decryptUiparams(this.fileRef.data);
+            }
+            return;
+        }// end function
+
+        public function getNumBytesUTF8(param1:String) : int
+        {
+            var _loc_2:* = new ByteArray();
+            _loc_2.writeUTFBytes(param1);
+            return _loc_2.length;
+        }// end function
+
+        public function encryptUiXml()
+        {
+            var _loc_5:* = null;
+            var _loc_6:* = null;
+            var _loc_7:* = null;
+            var _loc_8:* = null;
+            var _loc_1:* = this.folderRef.resolvePath(this.folderPath);
+            var _loc_2:* = _loc_1.getDirectoryListing();
+            var _loc_3:* = new ByteArray();
+            _loc_3.endian = "littleEndian";
+            var _loc_4:* = 0;
+            while (_loc_4 < _loc_2.length)
+            {
+                
+                _loc_5 = new FileStream();
+                _loc_6 = new File().resolvePath(_loc_2[_loc_4].nativePath);
+                _loc_5.open(_loc_6, FileMode.READ);
+                _loc_7 = _loc_5.readUTFBytes(_loc_5.bytesAvailable);
+                _loc_5.close();
+                _loc_8 = _loc_6.name.split(".")[0] + "|||" + _loc_7;
+                _loc_3.writeInt(this.getNumBytesUTF8(_loc_8));
+                _loc_3.writeUTFBytes(_loc_8);
+                _loc_4 = _loc_4 + 1;
+            }
+            _loc_3.compress();
+            new FileReference().save(_loc_3);
+            this.status_txt.text = "Done!";
+            return;
+        }// end function
+
+        public function decryptUixml(param1:ByteArray) : void
+        {
+            var fs:FileStream;
+            var targetFile:File;
+            var param1:* = param1;
+            var _loc_6:*;
+            var _loc_3:*;
+            var _loc_4:*;
+            var _loc_5:*;
+            var _loc_7:*;
+            var _loc_2:* = param1;
+            _loc_2.uncompress();
+            _loc_2.endian = "littleEndian";
+            var src:* = new ByteArray();
+            do
+            {
+                
+                _loc_6 = _loc_2.readInt();
+                _loc_3 = _loc_2.readUTFBytes(_loc_6);
+                _loc_4 = _loc_3.split("|||");
+                try
+                {
+                    _loc_5 = new XML(_loc_4[1]);
+                    fs = new FileStream();
+                    targetFile = new File().resolvePath(this.folderPath + "/" + _loc_4[0] + ".xml");
+                    fs.open(targetFile, FileMode.WRITE);
+                    fs.writeUTFBytes(_loc_4[1]);
+                    fs.close();
+                }
+                catch (err:Error)
+                {
+                    status_txt.text = err.toString();
+                    trace(err.toString());
+                }
+            }while (_loc_2.bytesAvailable > 0)
+            this.status_txt.text = "Done!";
+            return;
+        }// end function
+
+        public function decryptFystring(param1:ByteArray) : void
+        {
+            var _loc_7:* = null;
+            var _loc_8:* = undefined;
+            var _loc_9:* = null;
+            var _loc_2:* = new XML("<Result></Result>");
+            var _loc_3:* = null;
+            var _loc_4:* = [];
+            var _loc_5:* = null;
+            param1.uncompress();
+            param1.endian = "littleEndian";
+            param1.position = 0;
+            while (param1.bytesAvailable > 0)
+            {
+                
+                _loc_3 = param1.readObject();
+                _loc_4.push(_loc_3);
+            }
+            var _loc_6:* = 0;
+            while (_loc_6 < 4)
+            {
+                
+                _loc_5 = _loc_4[_loc_6];
+                _loc_7 = new XML("<Properties></Properties>");
+                _loc_8 = null;
+                for (_loc_8 in _loc_5)
+                {
+                    
+                    _loc_9 = new XML("<Property/>");
+                    _loc_9.@name = _loc_8;
+                    _loc_9.@content = _loc_5[_loc_8]["content"];
+                    if (_loc_5[_loc_8]["type"] != null)
+                    {
+                        _loc_9.@type = _loc_5[_loc_8]["type"];
+                    }
+                    if (_loc_5[_loc_8]["content"] != null)
+                    {
+                        _loc_7.appendChild(_loc_9);
+                    }
+                }
+                _loc_2.appendChild(_loc_7);
+                _loc_6 = _loc_6 + 1;
+            }
+            new FileReference().save(_loc_2);
+            this.status_txt.text = "Done!";
+            return;
+        }// end function
+
+        public function decryptUiparams(param1:ByteArray) : void
+        {
+            var _loc_6:* = null;
+            var _loc_7:* = undefined;
+            var _loc_2:* = new XML("<Result></Result>");
+            var _loc_3:* = null;
+            var _loc_4:* = [];
+            param1.uncompress();
+            param1.endian = "littleEndian";
+            param1.position = 0;
+            _loc_3 = param1.readObject();
+            var _loc_5:* = null;
+            for (_loc_5 in _loc_3)
+            {
+                
+                _loc_6 = new XML("<Element/>");
+                _loc_6.@name = _loc_5;
+                _loc_7 = null;
+                for (_loc_7 in _loc_3[_loc_5])
+                {
+                    
+                    _loc_6[_loc_7] = _loc_11[_loc_7];
+                }
+                _loc_2.appendChild(_loc_6);
+            }
+            new FileReference().save(_loc_2);
+            this.status_txt.text = "Done!";
+            return;
+        }// end function
+
+        public function ecryptUiparams(param1:ByteArray) : void
+        {
+            var _loc_6:* = null;
+            var _loc_7:* = undefined;
+            var _loc_2:* = new XML(param1.readUTFBytes(param1.bytesAvailable));
+            var _loc_3:* = [];
+            var _loc_4:* = new ByteArray();
+            var _loc_5:* = 0;
+            while (_loc_5 < _loc_2.Element.length())
+            {
+                
+                _loc_6 = new Object();
+                _loc_7 = null;
+                for each (_loc_7 in _loc_2.Element[_loc_5].@*)
+                {
+                    
+                    if (_loc_7.name() != "name")
+                    {
+                        _loc_6[_loc_7.name().toString()] = _loc_7.valueOf();
+                    }
+                }
+                _loc_3[_loc_2.Element[_loc_5].@name.toString()] = _loc_6;
+                _loc_5 = _loc_5 + 1;
+            }
+            _loc_4.writeObject(_loc_3);
+            _loc_4.compress();
+            this.status_txt.text = "Done!";
+            new FileReference().save(_loc_4);
+            return;
+        }// end function
+
+        public function decryptLoaderXml(param1:ByteArray) : void
+        {
+            var _loc_7:* = null;
+            var _loc_2:* = new XML("<Result></Result>");
+            var _loc_3:* = null;
+            var _loc_4:* = [];
+            var _loc_5:* = null;
+            param1.uncompress();
+            param1.endian = "littleEndian";
+            param1.position = 0;
+            _loc_3 = param1.readObject();
+            var _loc_6:* = null;
+            for (_loc_6 in _loc_3)
+            {
+                
+                _loc_7 = new XML("<Element/>");
+                _loc_7.@name = _loc_6;
+                _loc_7.@content = _loc_3[_loc_6];
+                _loc_2.appendChild(_loc_7);
+            }
+            new FileReference().save(_loc_2);
+            this.status_txt.text = "Done!";
+            return;
+        }// end function
+
+        public function ecryptLoaderXml(param1:ByteArray) : void
+        {
+            var _loc_2:* = new XML(param1.readUTFBytes(param1.bytesAvailable));
+            var _loc_3:* = [];
+            var _loc_4:* = new ByteArray();
+            var _loc_5:* = 0;
+            while (_loc_5 < _loc_2.Element.length())
+            {
+                
+                _loc_3[_loc_2.Element[_loc_5].@name.toString()] = _loc_2..Element[_loc_5].@content.toString();
+                _loc_5 = _loc_5 + 1;
+            }
+            _loc_4.writeObject(_loc_3);
+            _loc_4.compress();
+            this.status_txt.text = "Done!";
+            new FileReference().save(_loc_4);
+            return;
+        }// end function
+
+        public function encryptFystring(param1:ByteArray) : void
+        {
+            var _loc_7:* = undefined;
+            var _loc_8:* = NaN;
+            var _loc_9:* = undefined;
+            var _loc_2:* = new XML(param1.readUTFBytes(param1.bytesAvailable));
+            var _loc_3:* = [];
+            var _loc_4:* = new ByteArray();
+            var _loc_5:* = 0;
+            while (_loc_5 < _loc_2.Properties.length())
+            {
+                
+                _loc_7 = [];
+                _loc_8 = 0;
+                while (_loc_8 < _loc_2.Properties[_loc_5].Property.length())
+                {
+                    
+                    _loc_9 = null;
+                    _loc_9 = _loc_2.Properties[_loc_5].Property[_loc_8].@name.toString();
+                    _loc_7[_loc_9] = null;
+                    if (_loc_2.Properties[_loc_5].Property[_loc_8].@type != null)
+                    {
+                    }
+                    if (_loc_2.Properties[_loc_5].Property[_loc_8].@content != null)
+                    {
+                        _loc_7[_loc_9] = {type:_loc_2.Properties[_loc_5].Property[_loc_8].@type.toString(), content:_loc_2.Properties[_loc_5].Property[_loc_8].@content.toString()};
+                    }
+                    else if (_loc_2.Properties[_loc_5].Property[_loc_8].@type == null)
+                    {
+                        _loc_7[_loc_9] = {content:_loc_2.Properties[_loc_5].Property[_loc_8].@content.toString()};
+                    }
+                    else if (_loc_2.Properties[_loc_5].Property[_loc_8].@content == null)
+                    {
+                        _loc_7[_loc_9] = {type:_loc_2.Properties[_loc_5].Property[_loc_8].@type.toString()};
+                    }
+                    _loc_8 = _loc_8 + 1;
+                }
+                _loc_3.push(_loc_7);
+                _loc_5 = _loc_5 + 1;
+            }
+            var _loc_6:* = 0;
+            while (_loc_6 < 4)
+            {
+                
+                _loc_4.writeObject(_loc_3[_loc_6]);
+                _loc_6 = _loc_6 + 1;
+            }
+            _loc_4.compress();
+            new FileReference().save(_loc_4);
+            this.status_txt.text = "Done!";
+            return;
+        }// end function
+
+        function __setProp_submit_btn_Scene1_stageelements_0()
+        {
+            try
+            {
+                this.submit_btn["componentInspectorSetting"] = true;
+            }
+            catch (e:Error)
+            {
+            }
+            this.submit_btn.emphasized = false;
+            this.submit_btn.enabled = true;
+            this.submit_btn.label = "Unpack";
+            this.submit_btn.labelPlacement = "right";
+            this.submit_btn.selected = false;
+            this.submit_btn.toggle = false;
+            this.submit_btn.visible = true;
+            try
+            {
+                this.submit_btn["componentInspectorSetting"] = false;
+            }
+            catch (e:Error)
+            {
+            }
+            return;
+        }// end function
+
+        function __setProp_submit_btn_pack_Scene1_stageelements_0()
+        {
+            try
+            {
+                this.submit_btn_pack["componentInspectorSetting"] = true;
+            }
+            catch (e:Error)
+            {
+            }
+            this.submit_btn_pack.emphasized = false;
+            this.submit_btn_pack.enabled = true;
+            this.submit_btn_pack.label = "Pack";
+            this.submit_btn_pack.labelPlacement = "right";
+            this.submit_btn_pack.selected = false;
+            this.submit_btn_pack.toggle = false;
+            this.submit_btn_pack.visible = true;
+            try
+            {
+                this.submit_btn_pack["componentInspectorSetting"] = false;
+            }
+            catch (e:Error)
+            {
+            }
+            return;
+        }// end function
+
+        function __setProp_rb1_Scene1_stageelements_0()
+        {
+            try
+            {
+                this.rb1["componentInspectorSetting"] = true;
+            }
+            catch (e:Error)
+            {
+            }
+            this.rb1.enabled = true;
+            this.rb1.groupName = "RadioButtonGroup";
+            this.rb1.label = "Uixml";
+            this.rb1.labelPlacement = "right";
+            this.rb1.selected = false;
+            this.rb1.value = "";
+            this.rb1.visible = true;
+            try
+            {
+                this.rb1["componentInspectorSetting"] = false;
+            }
+            catch (e:Error)
+            {
+            }
+            return;
+        }// end function
+
+        function __setProp_rb2_Scene1_stageelements_0()
+        {
+            try
+            {
+                this.rb2["componentInspectorSetting"] = true;
+            }
+            catch (e:Error)
+            {
+            }
+            this.rb2.enabled = true;
+            this.rb2.groupName = "RadioButtonGroup";
+            this.rb2.label = "fyString";
+            this.rb2.labelPlacement = "right";
+            this.rb2.selected = false;
+            this.rb2.value = "";
+            this.rb2.visible = true;
+            try
+            {
+                this.rb2["componentInspectorSetting"] = false;
+            }
+            catch (e:Error)
+            {
+            }
+            return;
+        }// end function
+
+        function __setProp_rb3_Scene1_stageelements_0()
+        {
+            try
+            {
+                this.rb3["componentInspectorSetting"] = true;
+            }
+            catch (e:Error)
+            {
+            }
+            this.rb3.enabled = true;
+            this.rb3.groupName = "RadioButtonGroup";
+            this.rb3.label = "Loaderxml";
+            this.rb3.labelPlacement = "right";
+            this.rb3.selected = false;
+            this.rb3.value = "";
+            this.rb3.visible = true;
+            try
+            {
+                this.rb3["componentInspectorSetting"] = false;
+            }
+            catch (e:Error)
+            {
+            }
+            return;
+        }// end function
+
+        function __setProp_rb4_Scene1_stageelements_0()
+        {
+            try
+            {
+                this.rb4["componentInspectorSetting"] = true;
+            }
+            catch (e:Error)
+            {
+            }
+            this.rb4.enabled = true;
+            this.rb4.groupName = "RadioButtonGroup";
+            this.rb4.label = "uiparams";
+            this.rb4.labelPlacement = "right";
+            this.rb4.selected = false;
+            this.rb4.value = "";
+            this.rb4.visible = true;
+            try
+            {
+                this.rb4["componentInspectorSetting"] = false;
+            }
+            catch (e:Error)
+            {
+            }
+            return;
+        }// end function
+
+        function frame1()
+        {
+            this.radioGroup1 = new RadioButtonGroup("RES");
+            this.rb1.label = "Uixml";
+            this.rb2.label = "fyString";
+            this.rb3.label = "Loaderxml";
+            this.rb4.label = "uiparams";
+            this.rb1.group = this.radioGroup1;
+            this.rb2.group = this.radioGroup1;
+            this.rb3.group = this.radioGroup1;
+            this.rb4.group = this.radioGroup1;
+            this.submit_btn.addEventListener(MouseEvent.CLICK, this.submitClick);
+            this.submit_btn_pack.addEventListener(MouseEvent.CLICK, this.submitPackClick);
+            return;
+        }// end function
+
+    }
+}

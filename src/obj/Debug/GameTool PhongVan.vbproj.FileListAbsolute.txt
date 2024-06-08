@@ -1,0 +1,34 @@
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\bin\Debug\GameTool PhongVan.exe.config
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\bin\Debug\GameTool PhongVan.exe
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\bin\Debug\GameTool PhongVan.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\bin\Debug\GameTool PhongVan.xml
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\bin\Debug\7zip.dll
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\bin\Debug\zlib.net.dll
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\bin\Debug\7zip.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\bin\Debug\zlib.net.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\obj\Debug\GameTool PhongVan.vbprojAssemblyReference.cache
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\obj\Debug\ChuCong.Form1.resources
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\obj\Debug\ChuCong.Resources.resources
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\obj\Debug\GameTool PhongVan.vbproj.GenerateResource.cache
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\obj\Debug\GameTool PhongVan.vbproj.CoreCompileInputs.cache
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\obj\Debug\GameTool PhongVan.vbproj.CopyComplete
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\obj\Debug\GameTool PhongVan.exe
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\obj\Debug\GameTool PhongVan.xml
+E:\MÃ NGUỒN LẬP TRÌNH\DỰ ÁN\VBNet\GameTool PhongVan\obj\Debug\GameTool PhongVan.pdb
+D:\Source VBNet_C#\GitHub\PhongVan_RePack\src\bin\Debug\GameTool PhongVan.exe.config
+D:\Source VBNet_C#\GitHub\PhongVan_RePack\src\bin\Debug\GameTool PhongVan.exe
+D:\Source VBNet_C#\GitHub\PhongVan_RePack\src\bin\Debug\GameTool PhongVan.pdb
+D:\Source VBNet_C#\GitHub\PhongVan_RePack\src\bin\Debug\GameTool PhongVan.xml
+D:\Source VBNet_C#\GitHub\PhongVan_RePack\src\bin\Debug\7zip.dll
+D:\Source VBNet_C#\GitHub\PhongVan_RePack\src\bin\Debug\zlib.net.dll
+D:\Source VBNet_C#\GitHub\PhongVan_RePack\src\bin\Debug\7zip.pdb
+D:\Source VBNet_C#\GitHub\PhongVan_RePack\src\bin\Debug\zlib.net.pdb
+D:\Source VBNet_C#\GitHub\PhongVan_RePack\src\obj\Debug\GameTool PhongVan.vbproj.AssemblyReference.cache
+D:\Source VBNet_C#\GitHub\PhongVan_RePack\src\obj\Debug\ChuCong.Form1.resources
+D:\Source VBNet_C#\GitHub\PhongVan_RePack\src\obj\Debug\ChuCong.Resources.resources
+D:\Source VBNet_C#\GitHub\PhongVan_RePack\src\obj\Debug\GameTool PhongVan.vbproj.GenerateResource.cache
+D:\Source VBNet_C#\GitHub\PhongVan_RePack\src\obj\Debug\GameTool PhongVan.vbproj.CoreCompileInputs.cache
+D:\Source VBNet_C#\GitHub\PhongVan_RePack\src\obj\Debug\GameTool.8D777AC4.Up2Date
+D:\Source VBNet_C#\GitHub\PhongVan_RePack\src\obj\Debug\GameTool PhongVan.exe
+D:\Source VBNet_C#\GitHub\PhongVan_RePack\src\obj\Debug\GameTool PhongVan.xml
+D:\Source VBNet_C#\GitHub\PhongVan_RePack\src\obj\Debug\GameTool PhongVan.pdb

@@ -1,0 +1,51 @@
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\bin\Debug\Sample ByteArray Flash.exe.config
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\bin\Debug\Sample ByteArray Flash.exe
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\bin\Debug\Sample ByteArray Flash.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\bin\Debug\Sample ByteArray Flash.xml
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\bin\Debug\7zip.dll
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\bin\Debug\zlib.net.dll
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\bin\Debug\7zip.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\bin\Debug\zlib.net.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\obj\Debug\Sample ByteArray Flash.vbprojAssemblyReference.cache
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\obj\Debug\Sample ByteArray Flash.vbproj.GenerateResource.cache
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\obj\Debug\Sample ByteArray Flash.vbproj.CoreCompileInputs.cache
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\obj\Debug\Sample ByteArray Flash.vbproj.CopyComplete
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\obj\Debug\Sample ByteArray Flash.exe
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\obj\Debug\Sample ByteArray Flash.xml
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\obj\Debug\Sample ByteArray Flash.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\obj\Debug\ByteArray.Form1.resources
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash\obj\Debug\ByteArray.Resources.resources
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash-1\bin\Debug\Sample ByteArray Flash.exe.config
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash-1\bin\Debug\Sample ByteArray Flash.exe
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash-1\bin\Debug\Sample ByteArray Flash.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash-1\bin\Debug\Sample ByteArray Flash.xml
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash-1\bin\Debug\7zip.dll
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash-1\bin\Debug\zlib.net.dll
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash-1\bin\Debug\7zip.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash-1\bin\Debug\zlib.net.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash-1\obj\Debug\Sample ByteArray Flash.vbprojAssemblyReference.cache
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash-1\obj\Debug\ByteArray.Form1.resources
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash-1\obj\Debug\ByteArray.Resources.resources
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash-1\obj\Debug\Sample ByteArray Flash.vbproj.GenerateResource.cache
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash-1\obj\Debug\Sample ByteArray Flash.vbproj.CoreCompileInputs.cache
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash-1\obj\Debug\Sample ByteArray Flash.vbproj.CopyComplete
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash-1\obj\Debug\Sample ByteArray Flash.exe
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash-1\obj\Debug\Sample ByteArray Flash.xml
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\Sample ByteArray Flash-1\obj\Debug\Sample ByteArray Flash.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool PhongVan\bin\Debug\Sample ByteArray Flash.exe.config
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool PhongVan\bin\Debug\Sample ByteArray Flash.exe
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool PhongVan\bin\Debug\Sample ByteArray Flash.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool PhongVan\bin\Debug\Sample ByteArray Flash.xml
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool PhongVan\bin\Debug\7zip.dll
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool PhongVan\bin\Debug\zlib.net.dll
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool PhongVan\bin\Debug\7zip.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool PhongVan\bin\Debug\zlib.net.pdb
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool PhongVan\obj\Debug\Sample ByteArray Flash.vbprojAssemblyReference.cache
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool PhongVan\obj\Debug\ByteArray.Form1.resources
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool PhongVan\obj\Debug\ByteArray.Resources.resources
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool PhongVan\obj\Debug\Sample ByteArray Flash.vbproj.GenerateResource.cache
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool PhongVan\obj\Debug\Sample ByteArray Flash.vbproj.CoreCompileInputs.cache
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool PhongVan\obj\Debug\Sample ByteArray Flash.vbproj.CopyComplete
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool PhongVan\obj\Debug\Sample ByteArray Flash.exe
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool PhongVan\obj\Debug\Sample ByteArray Flash.xml
+E:\MÃ NGUỒN LẬP TRÌNH\VÍ DỤ\SAMPLE\GameTool PhongVan\obj\Debug\Sample ByteArray Flash.pdb

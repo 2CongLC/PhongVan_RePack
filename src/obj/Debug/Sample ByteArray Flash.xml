@@ -1,0 +1,252 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Sample ByteArray Flash
+</name>
+</assembly>
+<members>
+<member name="T:ByteArray.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:ByteArray.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:ByteArray.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:ByteArray.ByteArray.Compress(ByteArray.CompressionAlgorithm)">
+ <summary>
+ Nén dữ liệu
+ </summary>
+ <param name="algorithm"></param>
+</member>
+<member name="M:ByteArray.ByteArray.Uncompress(ByteArray.CompressionAlgorithm)">
+ <summary>
+ Giải nén giữ liệu
+ </summary>
+ <param name="algorithm"></param>
+</member>
+<member name="M:ByteArray.ByteArray.ReadByte">
+ <summary>
+ Đọc một Byte đã ký từ luồng byte.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ByteArray.ByteArray.ReadBytes(ByteArray.ByteArray,System.UInt32,System.UInt32)">
+ <summary>
+ Đọc số byte dữ liệu, được chỉ định bởi tham số độ dài, từ luồng byte.
+ </summary>
+ <param name="bytes"></param>
+ <param name="offset"></param>
+ <param name="length"></param>
+</member>
+<member name="M:ByteArray.ByteArray.ReadBoolean">
+ <summary>
+ Đọc giá trị Boolean từ luồng byte.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ByteArray.ByteArray.ReadDouble">
+ <summary>
+ Đọc số dấu phẩy động chính xác kép (64 bit) của IEEE 754 từ luồng byte.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ByteArray.ByteArray.ReadFloat">
+ <summary>
+ Đọc số dấu phẩy động có độ chính xác đơn (32 bit) của IEEE 754 từ luồng byte.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ByteArray.ByteArray.ReadInt">
+ <summary>
+ Đọc một số nguyên 32 Bit từ luồng byte.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ByteArray.ByteArray.ReadMultiByte(System.UInt32,System.String)">
+ <summary>
+ Đọc một chuỗi đa chuỗi có độ dài được chỉ định từ luồng byte bằng cách sử dụng bộ ký tự được chỉ định.
+ </summary>
+ <param name="length"></param>
+ <param name="charset"></param>
+ <returns></returns>
+</member>
+<member name="M:ByteArray.ByteArray.ReadShort">
+ <summary>
+ Đọc một số nguyên 16 Bit từ luồng byte.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ByteArray.ByteArray.ReadUnsignedByte">
+ <summary>
+ Đọc một Byte không dấu từ luồng byte.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ByteArray.ByteArray.ReadUnsignedInt">
+ <summary>
+ Đọc một số nguyên 32 bit không dấu từ luồng byte.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ByteArray.ByteArray.ReadUnsignedShort">
+ <summary>
+ Đọc một số nguyên 16 bit không dấu từ luồng byte.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ByteArray.ByteArray.ReadUTFBytes(System.Int32)">
+ <summary>
+ Đọc một chuỗi các byte UTF-8 được chỉ định bởi tham số độ dài từ luồng byte và trả về một chuỗi.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ByteArray.ByteArray.ReadUTF">
+ <summary>
+ Đọc một chuỗi UTF-8 từ luồng byte.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ByteArray.ByteArray.WriteBoolean(System.Boolean)">
+ <summary>
+  Ghi một giá trị Boolean.
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:ByteArray.ByteArray.WriteByte(System.SByte)">
+ <summary>
+ Ghi một byte vào luồng byte.
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:ByteArray.ByteArray.WriteBytes(ByteArray.ByteArray,System.UInt32,System.UInt32)">
+ <summary>
+ Ghi một chuỗi các byte có độ dài từ mảng byte được chỉ định, byte, bắt đầu bù (chỉ số dựa trên zero) vào luồng byte.
+ </summary>
+ <param name="bytes"></param>
+ <param name="offset"></param>
+ <param name="length"></param>
+</member>
+<member name="M:ByteArray.ByteArray.WriteDouble(System.Double)">
+ <summary>
+ Ghi một số dấu phẩy động có độ chính xác kép (64 bit) của IEEE 754 vào luồng byte.
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:ByteArray.ByteArray.WriteFloat(System.Single)">
+ <summary>
+ Ghi một số dấu phẩy động có độ chính xác đơn (32 bit) của IEEE 754 vào luồng byte.
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:ByteArray.ByteArray.WriteInt(System.Int32)">
+ <summary>
+ Ghi một số nguyên có chữ ký 32 bit vào luồng byte.
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:ByteArray.ByteArray.WriteMultiByte(System.String,System.String)">
+ <summary>
+ Ghi một chuỗi đa chuỗi vào luồng byte bằng cách sử dụng bộ ký tự được chỉ định.
+ </summary>
+ <param name="value"></param>
+ <param name="charset"></param>
+</member>
+<member name="M:ByteArray.ByteArray.WriteShort(System.Int16)">
+ <summary>
+ Ghi một số nguyên 16 bit vào luồng byte.
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:ByteArray.ByteArray.WriteUTF(System.String)">
+ <summary>
+ Ghi một chuỗi UTF-8 vào luồng byte.
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:ByteArray.ByteArray.WriteUTFBytes(System.String)">
+ <summary>
+ Ghi một chuỗi UTF-8 vào luồng byte.
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:ByteArray.ByteArray.WriteUnsignedByte(System.Byte)">
+ <summary>
+ Ghi một byte không dấu vào luồng byte.
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:ByteArray.ByteArray.WriteUnsignedInt(System.UInt32)">
+ <summary>
+ Ghi một số nguyên không dấu 32 bit vào luồng byte.
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:ByteArray.ByteArray.WriteUnsignedShort(System.UInt16)">
+ <summary>
+ Ghi một số nguyên 16 bit không dấu vào luồng byte.
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:ByteArray.ByteArray.ComputeMD5">
+ <summary>
+ Lấy mã MD5Hash
+ </summary>
+ <returns></returns>
+</member>
+<member name="F:ByteArray.ByteArray.TimezoneCompensation.None">
+ <summary>
+ No timezone compensation.
+ </summary>
+</member>
+<member name="F:ByteArray.ByteArray.TimezoneCompensation.Auto">
+ <summary>
+ Auto timezone compensation.
+ </summary>
+</member>
+<member name="F:ByteArray.ByteArray.TimezoneCompensation.Server">
+ <summary>
+ Convert to the server timezone.
+ </summary>
+</member>
+<member name="F:ByteArray.ByteArray.TimezoneCompensation.IgnoreUTCKind">
+ <summary>
+ Ignore UTCKind for DateTimes received from the client code.
+ </summary>
+</member>
+<member name="M:ByteArray.ByteArray.ReadU29Int">
+ <summary>
+ Đọc dữ liệu AMF3 kiểu 32 bit từ luồng byte.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ByteArray.ByteArray.ReadObject">
+ <summary>
+ Đọc một đối tượng từ mảng byte, được mã hóa theo định dạng nối tiếp AMF.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ByteArray.ByteArray.WriteU29Int(System.Int32)">
+ <summary>
+ Ghi kiểu dữ liệu AMF3 kiểu 32 bit bào luồng byte.
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:ByteArray.ByteArray.WriteObject(System.Object,System.Boolean)">
+ <summary>
+ Ghi một đối tượng vào mảng byte theo định dạng nối tiếp AMF.
+ </summary>
+ <param name="value"></param>
+ <param name="inStruct"></param>
+</member>
+</members>
+</doc>
